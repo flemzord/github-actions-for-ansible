@@ -13,4 +13,4 @@ LABEL com.github.actions.color="purple"
 COPY LICENSE README.md /
 
 # Bring git back so we can install roles with Ansible Galaxy
-RUN apt-get install -y git
+RUN apt-get install -y git-core
