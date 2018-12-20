@@ -14,3 +14,6 @@ COPY LICENSE README.md /
 
 # Bring git back so we can install roles with Ansible Galaxy
 RUN apt-get update -y && apt-get install -y git-core
+
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
